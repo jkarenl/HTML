@@ -1,0 +1,112 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos bases*/
+
+body {
+     background: var(--preta);
+     font-family: 'Arial', Times, serif;
+     color:white;
+}
+
+header .container{
+    display:flex; /*maneira de alinhar na tela, jogo tudo para a linha*/
+    flex-direction: row; /*informa a dreção do flexivel*/
+    align-items: center; /*alinha ao centro*/
+    justify-content: space-between /*justificar os intens, espaco entre eles*/
+}
+
+header .logo{
+    margin-left:5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', times;
+    font-size: 60px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/DIO\ PROJETO\ 2/img/capa-house.jpg'); /*caminho mais especificado*/
+    /*linear gradiente, duas cores,definição de cores e transparencia*/
+    
+    height: 400px;
+    background-size: cover; /*definir o tamanho do back e a area de cobertura*/
+    
+    display: flex; /*por padrão em linha*/
+    flex-direction: column; /*definido como coluna*/
+    justify-content: center; /*centralizar na tela, segue a mesma direção do anterior*/
+    align-items: flex-start; /*comecar na esquerda*/
+
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,0.50);
+    border:none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;/*quando colocar o curso modifica*/
+    transition: .3s ease all; /*mudança de estado quando passa o mouse*/
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preta);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+/*# WHAPPER = ENVELOPAR*/
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}

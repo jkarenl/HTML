@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <!--responsividade = adaptação do conteudo a tela-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css, crtl + space= ajuda a achar caminho, 
+        alt + shift + seta p baixo = duplica a linha-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="https://www.netflix.com/br/" target=*_blanck>Inicio</a>
+                <a href="https://www.netflix.com/br/" target=*_blanck>Série</a>
+                <a href="https://www.netflix.com/br/" target=*_blanck>Filmes</a>
+                <a href="https://www.netflix.com/br/" target=*_blanck>Minha lista</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">
+                    Nada pode Impedir o político sem escrúpulos Frank Underwood
+                    de consquistar Washington.
+                    Assita agora a nova temporada disponível esta imperdível.            
+                </p>
+                <div class="botoes">
+                    <button role="button" onclick="botao()" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSITIR AGORA
+                    </button>
+                    <button role="button" onclick="botao2()" class="botao">
+                        <i class="fas fa-info"></i>
+                        MAIS INFORMAÇÕES
+                    </BUtton>
+                </div>
+            </div>            
+        </div>
+    </main>
+
+    <!--$ = siginifica Jquery-->
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/86857d342a.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
